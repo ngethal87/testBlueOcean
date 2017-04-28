@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'make build'
+        sh 'echo \'here goes the building steps\''
       }
     }
     stage('Test') {
