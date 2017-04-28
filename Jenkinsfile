@@ -20,6 +20,11 @@ pipeline {
         )
       }
     }
+    stage('Log') {
+      steps {
+        junit(testResults: 'target', allowEmptyResults: true)
+      }
+    }
     stage('Deploy') {
       steps {
         sh 'echo \'Deploy step\''
