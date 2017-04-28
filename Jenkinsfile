@@ -35,11 +35,4 @@ java -cp .:/usr/share/java/junit4-4.12.jar org.junit.runner.JUnitCore  Calculato
       }
     }
   }
-  
-  post {
-        always {
-            archive 'build/libs/**/*.jar'
-          	junit 'build/reports/log-test.xml'
-        }
-    }
 }
