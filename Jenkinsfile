@@ -10,7 +10,7 @@ pipeline {
       steps {
         parallel(
           "Test": {
-            sh 'make test'
+            sh 'echo \'here goes the testing steps\''
             
           },
           "Test 02": {
